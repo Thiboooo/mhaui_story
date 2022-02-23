@@ -1,0 +1,39 @@
+html { 
+    background-color: #303030;
+    font-family: "Roboto",sans-serif;
+    padding-left: 150px; }
+p { 
+    color: lightgray;
+}  
+
+h1 { 
+    color: lightgray;
+}  
+
+h2 { 
+    color: lightgray;
+}  
+
+h3 { 
+    color: lightgray;
+}
+
+p { 
+    color: lightgray;
+} 
+
+#footer {
+    padding: 10px 10px 0px 10px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: #303030;
+    box-shadow: 0 0 5px #242424 inset;
+    border-radius: 10px;
+}
+
+#footer h1{
+    left: 0;
+    font-size:100%;
+
+}
