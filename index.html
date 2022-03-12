@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <head>
+    <!-- fixed-top-->
+    <header>
+        <!--- Navbar --->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#"><i class="fa fa-graduation-cap fa-lg mr-2"></i>MHA ULTRA IMPACT STORY QUEST REWARD : </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nvbCollapse">
+                </div>
+            </div>
+        </nav>
+        <!--# Navbar #-->
+        </header>
+    
+<!--/ fixed-top-->
 </head>
 <body>
     <tr>
-        <h1>MHA ULTRA IMPACT STORY QUEST REWARD : </h1>
         <h2>Click to see where you can find the rewards !</h2>
         <h3>You can click several items at the same time to see if they are obtainable in a same stage ! </h3>
     </tr>
     <table>
         <td class="tg-0lax">
-    <table class="tg">
+    <table class="table table-dark" style="margin-left: 50px">
         <thead>
             <tr>
                 <td class="tg-0lax">
@@ -258,8 +280,6 @@
           </tr>
         </thead>
         
-        </table>
-        <table class="tg">
             <thead>
                 <tr>
                     <td class="tg-0lax">
@@ -506,8 +526,6 @@
               </tr>
             </thead>
             
-            </table>
-            <table class="tg">
                 <thead>
                     <tr>
                         <td class="tg-0lax">
@@ -757,7 +775,7 @@
                 </table>
 
                     <td class="tg-0lax">
-                        <table class="tg">
+                        <table class="table table-dark" style="margin-left: 50px">
                             <thead>
                                 <tr>
                                     <td class="tg-0lax">
@@ -922,9 +940,6 @@
                     
                               </tr>
                             </thead>
-                            
-                            </table>
-                            <table class="tg">
                                 <thead>
                                     <tr>
                                         <td class="tg-0lax">
@@ -1089,9 +1104,6 @@
                         
                                   </tr>
                                 </thead>
-                                
-                            </table>
-                            <table class="tg">
                                 <thead>
                                     <tr>
                                         <td class="tg-0lax">
@@ -1185,7 +1197,7 @@
                                   </td>
                                   </table>
                                   <td class="tg-0lax" >
-                                  <table >
+                                  <table class="table table-dark" style="margin-left:100px;">
                                   <td class="tg-0lax" style="    padding-left: 100px;">
                                     <h3>
                                         Items selected :
@@ -1205,7 +1217,10 @@
                 <style> html { 
                             background-color: #303030;
                             font-family: "Roboto",sans-serif;
-                            padding-left: 150px; }
+                            }
+                        body {
+                            background-color: #303030;
+                        }
                         p { 
                             color: lightgray;
                         }  
@@ -1226,6 +1241,10 @@
                             color: lightgray;
                         } 
 
+                        table {
+                            padding-left: 150px; 
+                        }
+
                         #footer {
                             padding: 10px 10px 0px 10px;
                             position:absolute;
@@ -1241,6 +1260,10 @@
                             font-size:100%;
 
                         }
+                        .navbar { background-color: #484848; }
+                        .navbar .navbar-nav .nav-link { color: #fff; }
+                        .navbar .navbar-nav .nav-link:hover { color: #fbc531; }
+                        .navbar .navbar-nav .active > .nav-link { color: #fbc531; }
 
                 </style>
 
@@ -1302,7 +1325,7 @@ let s5_3 = ['green_bronze_juice','blue_bronze_gear','blue_bronze_bearing','s5_3'
 let s5_4 = ['red_bronze_juice','green_bronze_gear','green_bronze_bearing','s5_4'];
 let s5_6 = ['blue_bronze_juice','yellow_bronze_gear','yellow_bronze_bearing','s5_6'];
 let s5_7 = ['red_bronze_bearing','purple_bronze_gear','purple_bronze_bearing','s5_7'];
-let s5_8 = ['blue_bronze_bearing','green_bronze_can','blue_bronze_can','s5_8'];
+let s5_8 = ['blue_bronze_bearing','green_bronze_can','blue_bronze_gear','s5_8'];
 let s5_10 = ['green_bronze_bearing','red_bronze_can','green_bronze_gear','s5_10'];
 let s5_11 = ['yellow_bronze_bearing','blue_bronze_can','yellow_bronze_gear','s5_11'];
 let s5_12 = ['purple_bronze_bearing','red_bronze_chip','purple_bronze_gear','s5_12'];
@@ -1490,7 +1513,6 @@ let story_items = [s1_1 ,s1_2 ,s1_3 ,s1_5 ,s1_6 ,s1_7 ,s1_8 ,s1_10,s1_11,s1_12,s
 ,h6_10,h6_11 ,h6_12 ,h6_13,,h7_1 ,h7_2 ,h7_3,h7_4 ,h7_5  ,h7_6 ,h7_7 ,h7_8 ,h7_9 ,h7_10,h7_11,h7_12,h7_13,h8_1 ,h8_2  ,h8_3,h8_4 ,h8_5 ,h8_6 
 ,h8_7 ,h8_8 ,h8_9 ,h8_10,h8_11,h8_12,h8_13,h9_1 ,h9_2 ,h9_3 ,h9_4 ,h9_5 ,h9_6 ,h9_7 ,h9_8 ,h9_9 ,h9_10 ,h9_11,h9_12,h9_13];
 
-console.log("Setup var mode histoire \n");
 function refreshPage(){
     window.location.reload();
 }
@@ -1502,53 +1524,24 @@ function tri(searched_item_list,all_story_items){
     var list_stages = [] ;
     for (var i = 0; i < all_story_items.length; i++) {
         for (var item in all_story_items[i]) {
-            console.log("affichage de list_stages_found dans for ");
-            console.log(list_stages_found);
-            //console.log("deuxieme for : affichage de all_story_items[i][item] : "+all_story_items[i][item]);
-            //console.log("affichage de searched_item : "+searched_item);
             if(all_story_items[i][item]==searched_item_list[searched_item_list.length-1]){
                 console.log("objet trouver ");
                 list_stages_found.push(all_story_items[i][all_story_items[i].length-1]);
                 }
         }
     }
-    //console.log("affichage de list_stages_found");
-    //console.log(list_stages_found);
-    //console.log("affichage de temp");
-    //console.log(temp);
+
     list_list_stages_found.push(list_stages_found);
-    console.log("affichage de list_list_stages_found");
-    console.log(list_list_stages_found);
-    //return list_list_stages_found;
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //on fait des test pour afficher 
-    console.log("list_list_stages_found length  "+list_list_stages_found[0].length);
-    console.log(list_list_stages_found[0][list_list_stages_found[0].length-1]);
-    console.log("list_list_stages_found");
-    console.log(list_list_stages_found);
-    //var first_stage = list_list_stages_found[0][list_list_stages_found[0].length-1];
-    //var last_stage = list_list_stages_found[list_stages_found.length-1][list_list_stages_found[0].length-1] ;
+
     var first_stage = list_list_stages_found[0];
     var last_stage = list_list_stages_found[list_list_stages_found.length-1];
-    console.log("list_list_stages_found[0];");
-    console.log(list_list_stages_found[0]);
-    console.log("list_list_stages_found[list_stages_found.length-1]");
-    console.log(list_list_stages_found[list_list_stages_found.length-1]);
-    //console.log("test dup bizarre "+hasDuplicatesBool(first_stage,last_stage));
-    console.log("test dup bizarre "+IsIn(first_stage,last_stage));
+
     if (list_list_stages_found.length > 1 && IsIn(first_stage,last_stage) == false){
         document.getElementById("message").innerHTML = "<b>The items aren't on the same stage !";
     }else{
         if (list_list_stages_found.length == 1 ){
         var txt = "";
         for (var m=0; m<list_stages_found.length; m++) {
-            console.log(list_stages_found);
             let temp = list_stages_found[m];
             let restxt = temp.replace("h","<b>Hard ");
             restxt = restxt.replace("s","<b>Normal ");
@@ -1565,80 +1558,19 @@ function tri(searched_item_list,all_story_items){
             restxt = restxt.replace("_"," ");
             document.getElementById("message").innerHTML = "<b>Both of them are in this stage : "+restxt;
     }
-    }/*else{
-    if(hasDuplicatesBool(stages) == false){
-        console.log("faux");
-        var txt = "";
-        for (var m=0; m<stages.length; m++) {
-            console.log(stages);
-            let temp = stages[m];
-            let restxt = temp.replace("h","<b>Hard ");
-            restxt = restxt.replace("s","<b>Normal ");
-            restxt = restxt.replace("_","  ");
-            txt += restxt+ "<br />";
-            test_temp.push(stages[m]);
-        }
-        document.getElementById("message").innerHTML = txt+ "<br />";
-        return stages;
-    }else {
-        console.log("vrai  : "+hasDuplicatesVal(stages)+" et la taille : "+hasDuplicatesVal(stages).length);
-        for (var m=0; m<hasDuplicatesVal(stages).length; m++) {
-            if(hasDuplicatesVal(stages).length != 4 && hasDuplicatesVal(stages).length != 5){
-                /*console.log("dans le if");
-                console.log("print hasduplicate"+hasDuplicatesVal(stages));*//*
-                let temp = hasDuplicatesVal(stages);
-                let restxt = temp.replace("h","Hard ");
-                restxt = temp.replace("s","Normal ");
-                restxt = temp.replace("_"," ");
-                //txt += "Both of them are in this stage : "+hasDuplicatesVal(stages);
-                txt += "Both of them are in this stage : "+restxt;
-                document.getElementById("message").innerHTML = txt+ "<br />";
-            }else{
-                console.log("test stage "+value.length+"  tete"+hasDuplicatesBool(stages));
-                let temp = hasDuplicatesVal(stages);
-                let restxt = temp.replace("h","Hard ");
-                restxt = restxt.replace("s","Normal ");
-                restxt = restxt.replace("_"," ");
-                document.getElementById("message").innerHTML = "Both of them are in this stage : "+restxt;
-            }if (value.length > 3 && hasDuplicatesBool(stages) == true){
-                console.log("test pas stage ");
-                document.getElementById("message").innerHTML = "The items aren't on the same stage !";
-            }if (value.length > 2 && hasDuplicatesBool(temp1,temp3) == false){
-                console.log("stage 0 : "+result[0]+" stage 1 : "+result[1]+" stage 2 : "+result[2]);
-                console.log("test temp1 encore "+temp1);
-                console.log("test temp3 encore "+temp3);
-                console.log("result test"+hasDuplicatesBool(temp1,temp3));
-                console.log("test pas stage ezgzegezezge ");
-                console.log("debut des temp : ");
-                console.log(temp1);
-                console.log("temp1 en haut et temp3 en bas");
-                console.log(temp3);
-                document.getElementById("message").innerHTML = "The items aren't on the same stage !";
-            }
-            
-        }
-        return hasDuplicatesVal(stages) ;
     }
-    return stages;*/
-/*}*/
 }
 }
 
-//fonction avec un item 
 function findstages(value, array) {
     var result = [];
     var stages = [];
     var test_stage = [];
     for (var i = 0; i < array.length; i++) {
-        console.log("test");
         for (var item in array[i]) {
-            //console.log("test  "+array[i][item]+"      "+value);
             if(array[i][item]==value){
-                console.log("test yessssssssssssss");
                 result.push(array[i]);
-                stages.push(array[i][array[i].length-1])
-                console.log(array[i].length-1);
-                console.log(stages);
+                stages.push(array[i][array[i].length-1]);
 
             }
         }
@@ -1653,7 +1585,6 @@ var temp2 = [] ;
 var temp3 = [];
 
 var iii = 0 ;
-//test avec plusieurs items 
 function findstagesitems(value, array) {
     var result = [];
     var stages = [];
@@ -1662,69 +1593,34 @@ function findstagesitems(value, array) {
     var temptemp1 = [];
     var temptemp2 = [];
     var temptemp3 = [];
-    console.log("print value : "+value+" print value length : "+value.length);
     for (var i = 0; i < array.length; i++) {
-        /*console.log("test");*/
         for (var item in array[i]) {
-            //console.log("test  "+array[i][item]+"      "+value);
             for (var values in value){
                 if(array[i][item]==value[values]){
-                    console.log("test yessssssssssssss je test array i "+array[i]);
                     result.push(array[i]);
                     stages.push(array[i][array[i].length-1]);
                     if (iii == 0){
-                        console.log("temp1 avant ");
-                        console.log(temp1);
                         temp1 = temp1.concat(array[i][array[i].length-1]);
-                        console.log("temp1");
-                        console.log(temp1);
                     }else if (iii == 1) {
-                        console.log("temp2 avant ");
-                        console.log(temp2);
                         temp2 = temp2.concat(array[i][array[i].length-1]);
-                        console.log("temp2");
-                        console.log(temp2);
                     }else if (iii == 2) {
-                        console.log("temp3 avant ");
-                        console.log(temp3);
                         temp3 = temp3.concat(array[i][array[i].length-1]);
-                        console.log("temp3");
-                        console.log(temp3);
-                    }
-                    
-                    /*console.log(array[i].length-1);
-                    console.log(stages);*/
-    
+                    }    
                 }
             }
-            
         }
     }
     for (var jj = 0; jj <= temp2.length;jj++){
         temp3.shift();
     }
-    console.log("temp2 length : "+temp2.length);
-    console.log("debut des temp : ");
-    console.log(temp1);
-    console.log(temp2);
-    console.log(temp3);
-    console.log("fin temp");
     iii = iii + 1 ;
-    //
-    //
-    //
-    //
-    //
-    //
-    //
+
     if (value.length > 1 && hasDuplicatesBool(stages) == false){
         document.getElementById("message").innerHTML = "The items aren't on the same stage !";
     }else{
     if(hasDuplicatesBool(stages) == false){
-        console.log("faux");
         var txt = "";
         for (var m=0; m<stages.length; m++) {
-            console.log(stages);
             let temp = stages[m];
             let restxt = temp.replace("h","<b>Hard ");
             restxt = restxt.replace("s","<b>Normal ");
@@ -1735,38 +1631,23 @@ function findstagesitems(value, array) {
         document.getElementById("message").innerHTML = txt+ "<br />";
         return stages;
     }else {
-        console.log("vrai  : "+hasDuplicatesVal(stages)+" et la taille : "+hasDuplicatesVal(stages).length);
         for (var m=0; m<hasDuplicatesVal(stages).length; m++) {
             if(hasDuplicatesVal(stages).length != 4 && hasDuplicatesVal(stages).length != 5){
-                /*console.log("dans le if");
-                console.log("print hasduplicate"+hasDuplicatesVal(stages));*/
                 let temp = hasDuplicatesVal(stages);
                 let restxt = temp.replace("h","Hard ");
                 restxt = temp.replace("s","Normal ");
                 restxt = temp.replace("_"," ");
-                //txt += "Both of them are in this stage : "+hasDuplicatesVal(stages);
                 txt += "Both of them are in this stage : "+restxt;
                 document.getElementById("message").innerHTML = txt+ "<br />";
             }else{
-                console.log("test stage "+value.length+"  tete"+hasDuplicatesBool(stages));
                 let temp = hasDuplicatesVal(stages);
                 let restxt = temp.replace("h","Hard ");
                 restxt = restxt.replace("s","Normal ");
                 restxt = restxt.replace("_"," ");
                 document.getElementById("message").innerHTML = "Both of them are in this stage : "+restxt;
             }if (value.length > 3 && hasDuplicatesBool(stages) == true){
-                console.log("test pas stage ");
                 document.getElementById("message").innerHTML = "The items aren't on the same stage !";
             }if (value.length > 2 && hasDuplicatesBool(temp1,temp3) == false){
-                console.log("stage 0 : "+result[0]+" stage 1 : "+result[1]+" stage 2 : "+result[2]);
-                console.log("test temp1 encore "+temp1);
-                console.log("test temp3 encore "+temp3);
-                console.log("result test"+hasDuplicatesBool(temp1,temp3));
-                console.log("test pas stage ezgzegezezge ");
-                console.log("debut des temp : ");
-                console.log(temp1);
-                console.log("temp1 en haut et temp3 en bas");
-                console.log(temp3);
                 document.getElementById("message").innerHTML = "The items aren't on the same stage !";
             }
             
@@ -1779,11 +1660,8 @@ function findstagesitems(value, array) {
 var item_list = [];
 function additem(item,list){
         document.getElementById("message").innerHTML = "";
-        console.log(list[list.length-1]);
-        console.log("la liste des items "+item);
         selectedItems(item);
         if ( list[list.length-1] === item) { 
-            console.log("je coupe "+list.length-1);
             list.splice(list.length-1, 1); 
         }else {
             list.push(item);
@@ -1791,13 +1669,9 @@ function additem(item,list){
     if (list.length == 0){
         list.push(item);
     }else{
-        console.log("la liste en bas : ");
-        console.log(list);
-        
         return tri(list, story_items);
         //return findstagesitems(list, story_items);
     }
-    console.log(item);
 }
 
 function selectedItems(item){
@@ -1844,12 +1718,7 @@ function IsIn(array1,array2){
 function IsInVal(array1,array2){
     for (var i = 0; i < array1.length; ++i) {
         value = array1[i];
-        console.log("zizi1");
-        console.log(array1);
-        console.log("zizi2");
-        console.log(array2);
         if(array1.some(value => array2.includes(value))){
-            console.log("zizzi");
             return getCommon(array1,array2);
         }
     }
@@ -1868,10 +1737,7 @@ function getCommon(arr1, arr2) {
     
     return common;                     // Return the common elements
   }
-/*console.log(item_list);
-console.log("test additem en dehors fonction :"+item_list);
-console.log("test d'un truc "+findstagesitems(['blue_silver_juice','green_silver_can'], story_items));*/
-/*console.log(findstages("green_gold_battery",story_items));*/
+
 </script>
 </body>
 <div id= "footer">
