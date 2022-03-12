@@ -1265,6 +1265,7 @@
                         .navbar .navbar-nav .nav-link:hover { color: #fbc531; }
                         .navbar .navbar-nav .active > .nav-link { color: #fbc531; }
 
+
                 </style>
 
 <script>
@@ -1525,7 +1526,6 @@ function tri(searched_item_list,all_story_items){
     for (var i = 0; i < all_story_items.length; i++) {
         for (var item in all_story_items[i]) {
             if(all_story_items[i][item]==searched_item_list[searched_item_list.length-1]){
-                console.log("objet trouver ");
                 list_stages_found.push(all_story_items[i][all_story_items[i].length-1]);
                 }
         }
